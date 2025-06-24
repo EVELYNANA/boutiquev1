@@ -1,0 +1,381 @@
+<html>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Mi BOUTIQUE</title>
+        <style>
+
+             body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0f5;
+        }
+
+        header {
+            background-color: #0e6b88;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #1b1ed8;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+        margin:0 15px;
+        text-decoration:none;
+        color: #0e5788;
+        font-weight: bold;
+        }
+                    
+        .container {
+        padding:  2rem;
+        max-width: 1000px;
+        margin:auto;
+        }
+                    
+        .productos {
+        display: flex;
+        flex-wrap: wrap;
+        gap:1rem;
+        justify-content: center;
+        }
+        
+        .producto {
+        background-color:  white;
+        border-radius:  8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        width: 200px;
+        padding: 1rem;
+        text-align: center;
+        }
+
+        footer {
+        background-color: #1e1bd8;
+        color: white;
+        text-align:center;
+        padding: 1rem;
+        margin-top: 2rem;
+        }
+
+        button {
+        background-color: #0e2a88;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius:  4px;
+        }
+
+
+        button:hover {
+        background-color: #142bad;
+        }
+       
+        </style>
+
+        <body>
+            <header>
+                <h1>MI BOUTIQUE</h1>
+                <nav>
+                    <ul>
+                </ul>
+                <main>
+                    <section id="inicio">
+                        <h2>Bienvenidos A Nuestra Boutique</h2>
+                        <p>Descubre la ultima en moda y accesorios</p>
+                        <img width="180" height="180" src="https://i.deeezy.com/uploads/thumbnails/699/69968-ba982503c1cc31ff376202f29ad4e6c7.jpg">
+                        <h1>EveAna</h1>
+        
+                    </section>
+                </main>
+            
+            <div class="Top">
+                <img width="130" height="130" src="https://th.bing.com/th/id/OIP.oqzcyH-wDKPhhBvi1kOuaQHaJ4?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2">
+                <h3>Top</h3>
+                <p>$550 MXN</p>
+                <button onclick="agregarCarrito('Top')">Agregar al carrito</button>
+            </div>
+
+             <div class="Vestido">
+                <img width="130" height="130" src="https://ss510.liverpool.com.mx/sm/1118953041.jpg">
+                <h3>Vestido</h3>
+                <p>$1500 MXN</p>
+                <button onclick="agregarCarrito('Vestido')">Agregar al carrito</button>
+            </div>
+
+            
+             <div class="Falda">
+                <img width="130" height="130" src="https://th.bing.com/th/id/OIP.JjsQsXAX44hWAGYNWudfUgHaJ3?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2">
+                <h3>Falda</h3>
+                <p>$900 MXN</p>
+                <button onclick="agregarCarrito('Falda')">Agregar al carrito</button>
+            </div>
+
+            
+             <div class="Jeans">
+                <img width="130" height="130" src="https://th.bing.com/th/id/OIP.fDHeWYLamooSlR5Ta7_lpgHaLH?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2">
+                <h3>Jeans</h3>
+                <p>$1000 MXN</p>
+                <button onclick="agregarCarrito('Jeans')">Agregar al carrito</button>
+            </div>
+
+            
+             <div class="Blusa">
+                <img width="130" height="130" src="https://i.pinimg.com/736x/21/7d/21/217d2163a746183e6a47a2e2e486ffcb.jpg">
+                <h3>Blusa</h3>
+                <p>$1000 MXN</p>
+                <button onclick="agregarCarrito('Blusa')">Agregar al carrito</button>
+            </div>
+
+            
+             <div class="Short">
+                <img width="130" height="130" src="https://th.bing.com/th/id/R.1303493b6c68ebe6747f8b211771cdae?rik=TtiC45%2bk0QTIKQ&pid=ImgRaw&r=0">
+                <h3>Short</h3>
+                <p>$400 MXN</p>
+                <button onclick="agregarCarrito('Short')">Agregar al carrito</button>
+            </div>
+
+              <div class="Pantalon">
+                <img width="130" height="130" src="https://th.bing.com/th/id/OIP.XvemKTI6SOvOPJX2NCc4AwHaP_?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2">
+                <h3>Pantalon</h3>
+                <p>$1010 MXN</p>
+                <button onclick="agregarCarrito('Pantalon')">Agregar al carrito</button>
+            </div>
+
+            <div class="Chamarra">
+                <img width="130" height="130" src="https://www.elpalaciodehierro.com/on/demandware.static/-/Sites-palacio-master-catalog/default/dw7deb9067/images/38569727/negro/large/38569727_x1.jpg">
+                <h3>Chamarra</h3>
+                <p>$1900 MXN</p>
+                <button onclick="agregarCarrito('Chamarra')">Agregar al carrito</button>
+            </div>
+
+            
+              <div class="Sudadera">
+                <img width="130" height="130" src="https://th.bing.com/th/id/OIP.FVsOWdQz5r7U9LrKGf8r8QHaHa?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2">
+                <h3>Sudadera</h3>
+                <p>$800 MXN</p>
+                <button onclick="agregarCarrito('Sudadera')">Agregar al carrito</button>
+            </div>
+
+              <div class="Sudadera">
+                <img width="130" height="130" src="https://th.bing.com/th/id/OIP.FVsOWdQz5r7U9LrKGf8r8QHaHa?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2">
+                <h3>Sudadera</h3>
+                <p>$800 MXN</p>
+                <button onclick="agregarCarrito('Sudadera')">Agregar al carrito</button>
+            </div>
+            
+                 
+              <div class="Gorra">
+                <img width="130" height="130" src="https://img.sombreroshop.es/Gorra-Trucker-Women-s-NY-League-by-New-Era.52773a.jpg">
+                <h3>Gorra</h3>
+                <p>$300 MXN</p>
+                <button onclick="agregarCarrito('Gorra')">Agregar al carrito</button>
+            </div>
+
+               
+              <div class="Sueter">
+                <img width="130" height="130" src="https://th.bing.com/th/id/R.1428bfe83b587cc2bf7b557f0f2acbde?rik=1W6%2fdmloUKmhvw&pid=ImgRaw&r=0">
+                <h3>Sueter</h3>
+                <p>$800 MXN</p>
+                <button onclick="agregarCarrito('Sueter')">Agregar al carrito</button>
+            </div>
+
+            
+              <div class="Zaco">
+                <img width="130" height="130" src="https://montescojeans.com.ar/wp-content/uploads/como-se-le-dice-a-los-sacos-de-mujer-2.webp">
+                <h3>Zaco</h3>
+                <p>$900 MXN</p>
+                <button onclick="agregarCarrito('Zaco')">Agregar al carrito</button>
+              </div>
+
+              
+              <div class="Sombrero">
+                <img width="130" height="130" src="https://th.bing.com/th/id/OIP.dZ87misb3jwzqmYkNfIbqQHaHa?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2">
+                <h3>Sombrero</h3>
+                <p>$250 MXN</p>
+                <button onclick="agregarCarrito('Sombrero')">Agregar al carrito</button>
+              </div>
+
+
+              <div class="Pans">
+                <img width="130" height="130" src="https://th.bing.com/th/id/OIP.6r8O54jZHAvUdvNoMxq6OgHaJ3?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2">
+                <h3>Pans</h3>
+                <p>$450 MXN</p>
+                <button onclick="agregarCarrito('Pans')">Agregar al carrito</button>
+            </div>
+
+            <div class="Gafas">
+                <img width="130" height="130" src="https://th.bing.com/th/id/OIP.5NMTFKRRuW2-igrM_qU2rAHaGH?r=0&w=500&h=413&rs=1&pid=ImgDetMain&cb=idpwebpc2">
+                <h3>Gafas</h3>
+                <p>$200 MXN</p>
+                <button onclick="agregarCarrito('Gafas')">Agregar al carrito</button>
+            </div>
+
+            
+              <div class="Pantalon Guango">
+                <img width="130" height="130" src="https://th.bing.com/th/id/OIP._lDszth0FaTa9lH2pnQK_wHaJK?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2">
+                <h3>Pantalon Guango</h3>
+                <p>$1000 MXN</p>
+                <button onclick="agregarCarrito('Pantalon Guango')">Agregar al carrito</button>
+              </div>
+
+            <div class="Cinturon">
+                <img width="130" height="130" src="https://http2.mlstatic.com/D_NQ_NP_799803-MLM85703591764_062025-O-cinturon-vintage-para-mujer-cinturon-de-cuero-cinturon-par.webp">
+                <h3>Cinturon</h3>
+                <p>$1100 MXN</p>
+                <button onclick="agregarCarrito('Cinturon')">Agregar al carrito</button>
+            </div>
+
+            
+            <div class="Faja">
+                <img width="130" height="130" src="https://m.media-amazon.com/images/I/61r8Hkv+0GL._AC_UL1410_.jpg">
+                <h3>Faja</h3>
+                <p>$700 MXN</p>
+                <button onclick="agregarCarrito('Faja')">Agregar al carrito</button>
+            </div>
+
+
+
+              <div class="Reloj">
+                <img width="130" height="130" src="https://www.relojesmania.com/wp-content/uploads/2022/05/rolex-mujer.jpg">
+                <h3>Reloj</h3>
+                <p>$6350 MXN</p>
+                <button onclick="agregarCarrito('Reloj')">Agregar al carrito</button>
+              </div>
+
+
+               <div class="Aretes">
+                <img width="130" height="130" src="https://http2.mlstatic.com/D_NQ_NP_823115-MLM44590041310_012021-F.jpg">
+                <h3>Aretes</h3>
+                <p>$1500 MXN</p>
+                <button onclick="agregarCarrito('Aretes')">Agregar al carrito</button>
+            </div
+
+              
+              <div class="Anillo">
+                <img width="130" height="130" src="https://th.bing.com/th/id/R.9245b904669fe3077ed6db18e16a55b6?rik=2y7cFohbwTKPgA&pid=ImgRaw&r=0">
+                <h3>Anillo</h3>
+                <p>$1000 MXN</p>
+                <button onclick="agregarCarrito('Anillo')">Agregar al carrito</button>
+              </div>
+
+              <div class="Collar">
+                <img width="130" height="130" src="https://th.bing.com/th/id/R.ae5348a75ffc8009a89e9221bc7a18b2?rik=BUJZTJAjZZqNyg&pid=ImgRaw&r=0">
+                <h3>Collar</h3>
+                <p>$2500 MXN</p>
+                <button onclick="agregarCarrito('Collar')">Agregar al carrito</button>
+              </div>
+
+             <div class="Pulsera">
+                <img width="130" height="130" src="https://th.bing.com/th/id/OIP.RDOElvUm6h6FVYKi35P_9gHaE6?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2">
+                <h3>Pulsera</h3>
+                <p>$1050 MXN</p>
+                <button onclick="agregarCarrito('Pulsera')">Agregar al carrito</button>
+             </div>
+
+            
+              <div class="Perfume">
+                <img width="130" height="130" src="https://th.bing.com/th/id/OIP.EdMDU4cDkOtodQCm2mSuOAHaEK?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2">
+                <h3>Perfume</h3>
+                <p>$2000 MXN</p>
+                <button onclick="agregarCarrito('Perfume')">Agregar al carrito</button>
+              </div>
+
+                
+              <div class="Bolsa">
+                <img width="130" height="130" src="https://http2.mlstatic.com/bolsa-michael-kors-couro-D_NQ_NP_295211-MLB20521266163_122015-F.jpg">
+                <h3>Bolsa</h3>
+                <p>$1400 MXN</p>
+                <button onclick="agregarCarrito('Bolsa')">Agregar al carrito</button>
+              </div>
+
+                     
+              <div class="Zapatillas">
+                <img width="130" height="130" src="https://m.media-amazon.com/images/I/4191ce5x8eL._AC_.jpg">
+                <h3>Zapatillas</h3>
+                <p>$1100 MXN</p>
+                <button onclick="agregarCarrito('Zapatillas')">Agregar al carrito</button>
+              </div>
+
+                       
+              <div class="Tenis">
+                <img width="130" height="130" src="https://th.bing.com/th/id/OIP.m0aacq2CoZeavuLwoZKXJgHaFe?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2">
+                <h3>Tenis</h3>
+                <p>$1250 MXN</p>
+                <button onclick="agregarCarrito('Tenis')"></button>
+              </div>
+
+        <!DOCTYPE html>
+      <html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Video en HTML</title>
+</head>
+<body>
+  
+  <h1>Mi video en HTML</h1>
+
+  <!-- Video con controles -->
+  <video width="640" height="360" controls>  </video>
+    <source src="https://pin.it/6FLi035J3" type="video/mp4">
+</body>
+</html>
+
+       
+        <!DOCTYPE html>
+        <html> 
+        <head>
+      	<title>Gracias por tu Compra</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			text-align: center;
+		}
+		.titulo {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.mensaje {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		.boton {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.boton:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="titulo">¡Gracias por tu Compra!</h1>
+		<p class="mensaje">Queremos agradecerte por elegirnos para realizar tu compra. Estamos emocionados de que hayas encontrado algo que te guste.</p>
+		<p class="mensaje">Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarnos.</p>
+		<button class="boton">Volver a la Tienda</button>
+	</div>
+</body>
+</html>
